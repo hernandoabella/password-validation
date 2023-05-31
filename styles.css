@@ -42,7 +42,11 @@ input {
 }
 
 #largo {
+  font-size: 0.9rem;
   color: #333;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .eye-icon {
@@ -50,7 +54,6 @@ input {
   right: 10px;
   top: 10px;
   cursor: pointer;
-
   padding: 10px;
   border-radius: 12px;
 }
@@ -67,50 +70,22 @@ input {
   color: #753a88;
 }
 
-#validar0,
-#validar1,
-#validar2,
-#validar3,
-#validar4,
-#largo {
+.validar {
   padding: 5px;
   font-size: 0.9rem;
   color: #555;
   margin-left: 20px;
 }
 
-#icon0:before,
-#icon1:before,
-#icon2:before,
-#icon3:before,
-#icon4:before {
+.icon:before {
   display: inline-block;
+  margin-right: 5px;
 }
 
-#icon0:before {
-  content: "\f058";
-}
-
-#icon1:before {
-  content: "\f058";
-}
-
-#icon2:before {
-  content: "\f058";
-}
-
-#icon3:before {
-  content: "\f058";
-}
-
-#icon4:before {
-  content: "\f058";
-}
-
-.valid {
+.icon.fa-check-circle {
   color: green;
 }
 
-.invalid {
+.icon.fa-times-circle {
   color: red;
 }

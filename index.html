@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Validador de Contraseña</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Validador de Contraseña</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+  <div class="container">
+    <input
+      type="password"
+      id="password"
+      placeholder="Contraseña"
+      oninput="validar()"
     />
-  </head>
-  <body>
-    <div class="container">
-      <input
-        type="password"
-        id="password"
-        placeholder="Contraseña"
-        oninput="validar()"
-      />
-      <i id="ver" onclick="ver()" class="eye-icon fas fa-eye-slash"></i>
+    <i id="ver" onclick="ver()" class="eye-icon fas fa-eye-slash"></i>
 
-      <div id="largo">Largo de la contraseña: 0</div>
+    <div id="largo">Largo de la contraseña: 0</div>
 
-      <div id="validar0">
-        <i class="far" id="icon0"></i> <span>Más de 5 caracteres</span>
-      </div>
-
-      <div id="validar1">
-        <i class="far" id="icon1"></i> <span>Menos de 10 caracteres</span>
-      </div>
-
-      <div id="validar2">
-        <i class="far" id="icon2"></i> <span>Contiene números</span>
-      </div>
-
-      <div id="validar3">
-        <i class="far" id="icon3"></i>
-        <span>Contiene caracteres especiales</span>
-      </div>
-
-      <div id="validar4">
-        <i class="far" id="icon4"></i> <span>No debe tener espacios</span>
-      </div>
+    <div class="validar">
+      <i class="icon far fa-times-circle"></i> <span>Más de 5 caracteres</span>
     </div>
 
-    <script src="script.js"></script>
-  </body>
+    <div class="validar">
+      <i class="icon far fa-times-circle"></i> <span>Menos de 10 caracteres</span>
+    </div>
+
+    <div class="validar">
+      <i class="icon far fa-times-circle"></i> <span>Contiene números</span>
+    </div>
+
+    <div class="validar">
+      <i class="icon far fa-times-circle"></i>
+      <span>Contiene caracteres especiales</span>
+    </div>
+
+    <div class="validar">
+      <i class="icon far fa-times-circle"></i> <span>No debe tener espacios</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
