@@ -7,30 +7,28 @@ function ver() {
   if (visible) {
     input.type = "password";
     visible = false;
-    ver.style.color = "#cc2b5e";
+    ver.classList.remove("visible");
   } else {
     input.type = "text";
     visible = true;
-    ver.style.color = "#753a88";
+    ver.classList.add("visible");
   }
 }
 
 function validar() {
   var input = document.getElementById("password").value;
 
- 
-
   document.getElementById("password").value = input;
 
-  document.getElementById("largo").innerText = "Largo : " + input.length;
+  document.getElementById("largo").innerText = "Largo: " + input.length;
 
-  if (input.length > 5) {
+  if (input.length >= 5) {
     document.getElementById("validar0").style.color = "green";
   } else {
     document.getElementById("validar0").style.color = "red";
   }
 
-  if (input.length < 10) {
+  if (input.length <= 10) {
     document.getElementById("validar1").style.color = "green";
   } else {
     document.getElementById("validar1").style.color = "red";
@@ -48,10 +46,9 @@ function validar() {
     document.getElementById("validar3").style.color = "red";
   }
 
-  if (input.match("/\s/")) {
+  if (input.match(/\s/)) {
     document.getElementById("validar4").style.color = "red";
   } else {
     document.getElementById("validar4").style.color = "green";
   }
 }
-

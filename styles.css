@@ -37,3 +37,22 @@ input {
   cursor: pointer;
 }
 
+.eye-icon {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.eye-icon.visible::before {
+  content: "\f06e";
+}
+
+.eye-icon::before {
+  content: "\f070";
+}
+
+.eye-icon.visible {
+  color: #753a88;
+}
