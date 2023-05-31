@@ -9,7 +9,7 @@
 body {
   user-select: none;
   font-family: "Roboto", sans-serif;
-  background: #cc2b5e;
+  background: #cc2b8e;
 }
 
 .container {
@@ -31,7 +31,7 @@ input {
   border-radius: 12px;
   text-align: center;
   margin: 10px;
-  width: 90%;
+  width: 94%;
   border: none;
   outline: none;
 }
@@ -50,7 +50,7 @@ input {
   right: 10px;
   top: 10px;
   cursor: pointer;
-  background: #e8e8e8;
+
   padding: 10px;
   border-radius: 12px;
 }
