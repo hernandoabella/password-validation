@@ -9,7 +9,7 @@
 body {
   user-select: none;
   font-family: "Roboto", sans-serif;
-  /* background: #cc2b5e; fallback for old browsers */
+  background: #cc2b5e;
 }
 
 .container {
@@ -30,6 +30,10 @@ input {
   padding: 10px;
   border-radius: 12px;
   text-align: center;
+  margin: 10px;
+  width: 90%;
+  border: none;
+  outline: none;
 }
 
 #ver {
@@ -37,12 +41,18 @@ input {
   cursor: pointer;
 }
 
+#largo {
+  color: #333;
+}
+
 .eye-icon {
-  position: relative;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
   cursor: pointer;
+  background: #e8e8e8;
+  padding: 10px;
+  border-radius: 12px;
 }
 
 .eye-icon.visible::before {
@@ -55,4 +65,52 @@ input {
 
 .eye-icon.visible {
   color: #753a88;
+}
+
+#validar0,
+#validar1,
+#validar2,
+#validar3,
+#validar4,
+#largo {
+  padding: 5px;
+  font-size: 0.9rem;
+  color: #555;
+  margin-left: 20px;
+}
+
+#icon0:before,
+#icon1:before,
+#icon2:before,
+#icon3:before,
+#icon4:before {
+  display: inline-block;
+}
+
+#icon0:before {
+  content: "\f058";
+}
+
+#icon1:before {
+  content: "\f058";
+}
+
+#icon2:before {
+  content: "\f058";
+}
+
+#icon3:before {
+  content: "\f058";
+}
+
+#icon4:before {
+  content: "\f058";
+}
+
+.valid {
+  color: green;
+}
+
+.invalid {
+  color: red;
 }

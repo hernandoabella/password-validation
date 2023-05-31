@@ -15,32 +15,36 @@
   </head>
   <body>
     <div class="container">
-      <input type="password" id="password" placeholder="Contraseña" oninput="validar()" />
+      <input
+        type="password"
+        id="password"
+        placeholder="Contraseña"
+        oninput="validar()"
+      />
       <i id="ver" onclick="ver()" class="eye-icon fas fa-eye-slash"></i>
 
       <div id="largo">Largo de la contraseña: 0</div>
 
       <div id="validar0">
-        <i class="far fa-check-circle"></i> <span>Más de 5 carácteres</span>
+        <i class="far" id="icon0"></i> <span>Más de 5 caracteres</span>
       </div>
 
       <div id="validar1">
-        <i class="far fa-check-circle"></i> <span>Menos de 10 carácteres</span>
+        <i class="far" id="icon1"></i> <span>Menos de 10 caracteres</span>
       </div>
 
       <div id="validar2">
-        <i class="far fa-check-circle"></i> <span>Contiene números</span>
+        <i class="far" id="icon2"></i> <span>Contiene números</span>
       </div>
 
       <div id="validar3">
-        <i class="far fa-check-circle"></i>
-        <span>Contiene carácteres especiales</span>
+        <i class="far" id="icon3"></i>
+        <span>Contiene caracteres especiales</span>
       </div>
 
       <div id="validar4">
-        <i class="far fa-check-circle"></i> <span>No debe tener espacios</span>
+        <i class="far" id="icon4"></i> <span>No debe tener espacios</span>
       </div>
-      
     </div>
 
     <script src="script.js"></script>
