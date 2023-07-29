@@ -2,13 +2,9 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background: #ff0084;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #33001b, #ff0084);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #33001b, #ff0084);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: #00c6ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .container {
@@ -29,18 +25,23 @@ input {
   outline: none;
   padding: 10px;
   border-radius: 12px 0px 0px 12px;
+  float: left;
+  width: 190px;
 }
 
 #ver {
-  
+  padding: 10px;
+  border-radius: 0px 12px 12px 0px;
+  border: none;
+  outline: none;
 }
 
 .largo__de__contra {
-  padding: 10px;
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
 
 #largo {
-  font-size: 0.9rem;
   color: #333;
   font-weight: bold;
 }
@@ -62,10 +63,10 @@ input {
 }
 
 .validar {
-  padding: 5px;
-  font-size: 0.9rem;
+  padding: 0px;
   color: #555;
-
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
 
 .icon:before {
