@@ -21,7 +21,7 @@ function validar() {
 
   document.getElementById("password").value = input;
   document.getElementById("largo").innerText =
-    `Largo de la contraseña: ${passwordLength}`;
+    `${passwordLength}`;
 
   var validarItems = document.querySelectorAll(".validar");
 
