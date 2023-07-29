@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   user-select: none;
   font-family: "Roboto", sans-serif;
@@ -22,31 +16,32 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 320px;
-  height: 250px;
+  
 }
 
 input {
   padding: 10px;
   border-radius: 12px;
   text-align: center;
-  margin: 10px;
-  width: 94%;
   border: none;
   outline: none;
+
+  
 }
 
 #ver {
-  color: #333;
+  color: #353535;
   cursor: pointer;
+}
+
+.largo__de__contra {
+  padding: 10px;
 }
 
 #largo {
   font-size: 0.9rem;
   color: #333;
-  margin-left: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .eye-icon {
