@@ -16,23 +16,15 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
+  padding: 20px;
 }
 
 input {
-  padding: 10px;
-  border-radius: 12px;
-  text-align: center;
   border: none;
   outline: none;
-
-  
+  padding: 10px;
 }
 
-#ver {
-  color: #353535;
-  cursor: pointer;
-}
 
 .largo__de__contra {
   padding: 10px;
@@ -45,12 +37,7 @@ input {
 }
 
 .eye-icon {
-  position: absolute;
-  right: 10px;
-  top: 10px;
   cursor: pointer;
-  padding: 10px;
-  border-radius: 12px;
 }
 
 .eye-icon.visible::before {
@@ -69,7 +56,7 @@ input {
   padding: 5px;
   font-size: 0.9rem;
   color: #555;
-  margin-left: 20px;
+  
 }
 
 .icon:before {
