@@ -1,50 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validador de contraseña 🔒</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Validador de contraseña 🔒</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css" />
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css" />
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css" />
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css" />
-</head>
+  <body>
+    <div class="container">
+      <div class="flexInput">
+        <input
+          type="password"
+          id="password"
+          placeholder="Contraseña"
+          oninput="validar()"
+        />
+        <button onclick="ver()" id="ver">
+          <i class="eye-icon fas fa-eye-slash"></i>
+        </button>
+      </div>
 
-<body>
-  <div class="container">
-    <div class="flexInput">
-      <input type="password" id="password" placeholder="Contraseña" oninput="validar()" />
-      <button onclick="ver()" id="ver"><i class="eye-icon fas fa-eye-slash"></i></button>
+      <div class="largo__de__contra">Largo: <span id="largo">0</span></div>
+
+      <div class="validar">
+        <i class="icon far fa-times-circle"></i>
+        <span>Más de 5 caracteres</span>
+      </div>
+
+      <div class="validar">
+        <i class="icon far fa-times-circle"></i>
+        <span>Menos de 10 caracteres</span>
+      </div>
+
+      <div class="validar">
+        <i class="icon far fa-times-circle"></i> <span>Contiene números</span>
+      </div>
+
+      <div class="validar">
+        <i class="icon far fa-times-circle"></i>
+        <span>Caracteres especiales</span>
+      </div>
+
+      <div class="validar">
+        <i class="icon far fa-times-circle"></i>
+        <span>No debe tener espacios</span>
+      </div>
     </div>
 
-    <div class="largo__de__contra">Largo: <span id="largo">0</span></div>
-
-    <div class="validar">
-      <i class="icon far fa-times-circle"></i> <span>Más de 5 caracteres</span>
-    </div>
-
-    <div class="validar">
-      <i class="icon far fa-times-circle"></i> <span>Menos de 10 caracteres</span>
-    </div>
-
-    <div class="validar">
-      <i class="icon far fa-times-circle"></i> <span>Contiene números</span>
-    </div>
-
-    <div class="validar">
-      <i class="icon far fa-times-circle"></i>
-      <span>Caracteres especiales</span>
-    </div>
-
-    <div class="validar">
-      <i class="icon far fa-times-circle"></i> <span>No debe tener espacios</span>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
