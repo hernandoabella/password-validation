@@ -15,8 +15,10 @@
 
 <body>
   <div class="container">
-    <input type="password" id="password" placeholder="Contraseña" oninput="validar()" />
-    <button onclick="ver()" id="ver"><i class="eye-icon fas fa-eye-slash"></i></button>
+    <div class="flexInput">
+      <input type="password" id="password" placeholder="Contraseña" oninput="validar()" />
+      <button onclick="ver()" id="ver"><i class="eye-icon fas fa-eye-slash"></i></button>
+    </div>
 
     <div class="largo__de__contra">Largo: <span id="largo">0</span></div>
 
